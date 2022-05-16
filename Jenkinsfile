@@ -12,7 +12,7 @@ sh 'make test'
 }
 }
 stage('Push image') {
-docker.withRegistry('https://registry.hub.docker.com', 'nnnnn9915') {
+docker.withRegistry('https://hub.docker.com/repository/docker/nnnnn9915/test', 'nnnnn9915') {
 app.push("${env.BUILD_NUMBER}")
 app.push("latest")
 }
