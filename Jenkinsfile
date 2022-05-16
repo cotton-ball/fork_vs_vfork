@@ -4,7 +4,7 @@ stage('Clone repository') {
 git 'https://github.com/cotton-ball/fork_vs_vfork.git'
 }
 stage('Build image') {
-app = docker.build("nayeon/test")
+app = docker.build("nnnnn9915/test")
 }
 stage('Test image') {
 app.inside {
